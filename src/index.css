@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-vazir: "Vazirmatn", "Inter", sans-serif;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 transition-colors duration-300;
+}
+
+/* Custom classes for font family control based on active language */
+.lang-fa {
+  font-family: "Vazirmatn", "Inter", sans-serif;
+}
+
+.lang-en {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Print utility styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-card {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    page-break-inside: avoid;
+  }
+}
