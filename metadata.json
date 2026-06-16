@@ -1,0 +1,6 @@
+{
+  "name": "Soroush Motor Gorgan Defect Dashboard (SMGD)",
+  "description": "A localized and responsive web dashboard for defect and non-compliance reporting at Soroush Motor Gorgan (SMGD), featuring user management, calendar tracking, activity reporting, and interactive metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
